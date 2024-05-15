@@ -13,6 +13,9 @@ include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 # Inherit from the proprietary version
 include vendor/xiaomi/ingres/BoardConfigVendor.mk
 
+# Miui Camera for cupid
+include device/xiaomi/miuicamera-cupid/BoardConfig.mk
+
 DEVICE_PATH := device/xiaomi/ingres
 
 # Audio
