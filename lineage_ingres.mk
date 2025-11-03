@@ -10,6 +10,13 @@ $(call inherit-product, device/xiaomi/ingres/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# LunarisAOSP
+TARGET_DISABLE_EPPE := true
+TARGET_OPTIMIZED_DEXOPT := true
+WITH_BCR := true
+WITH_GMS := true
+TARGET_USES_CORE_GAPPS := true
+
 PRODUCT_NAME := lineage_ingres
 PRODUCT_DEVICE := ingres
 PRODUCT_MANUFACTURER := Xiaomi

@@ -1,2 +1,5 @@
 # Xiaomi
 ro.product.mod_device=ingres_global
+
+# LunarisAOSP
+ro.paranoid.maintainer=KernelPanix
