@@ -8,9 +8,17 @@
 $(call inherit-product, device/xiaomi/ingres/device.mk)
 
 # Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_ingres
+# CherishOS
+TARGET_DISABLE_EPPE := true
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
+TARGET_HAS_UDFPS := true
+CHERISH_BUILD_TYPE := UNOFFICIAL
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.cherish.maintainer=KernelPanix
+
+PRODUCT_NAME := cherish_ingres
 PRODUCT_DEVICE := ingres
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
