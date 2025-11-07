@@ -10,6 +10,25 @@ $(call inherit-product, device/xiaomi/ingres/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Build
+TARGET_DISABLE_EPPE := true
+MISTOS_MAINTAINER := KernelPanix
+WITH_GMS := true
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+BYPASS_CHARGE_SUPPORTED := false
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.mist.display= 2400 x 1080, 120 hz
+    ro.mist.battery=4700mah
+    ro.mist.soc=Snapdragon® 8 Gen 1
+    ro.mist.camera=64MP + 8MP + 2MP
+    ro.mist.front=20MP
+    ro.mist.platform=SM8450
+    ro.mist.screen=6.67' OLED
+    ro.mist.device.name=Xiaomi Poco F4 GT
+
 PRODUCT_NAME := lineage_ingres
 PRODUCT_DEVICE := ingres
 PRODUCT_MANUFACTURER := Xiaomi
